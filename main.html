@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <h1>Registration Form</h1>
+
+    <section class="class1">
+        <div class="classHead">
+            <h2>Welcome to my form!</h2>
+        </div>
+    </section>
+
+    <section>
+        <h2 class = "class1">Form details:</h2>
+        <div class="details">
+            <div class="detail class1">
+                <img src="./images/img1.jpg" alt="">
+            </div>
+            <div class="detail class1">
+                <img src="./images/img2.jpg" alt="">
+            </div>
+            <div class="detail class1">
+                <img src="./images/img3.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <div class="detailsForm">
+        <form class="formWindow">
+
+                <label for="name" class="labels">Name:
+                    <input type="text" id="name" name="name" placeholder="Your name here..."
+                    style="margin-left: 25%;">
+                </label> <br>
+
+                <label for="username" class="labels">Username:
+                    <input type="text" id="username" name="username" placeholder="Your Username"
+                    style="margin-left: 22.6%;">
+                </label> <br>
+
+                <label for="email" class="labels">Email:
+                    <input type="email" id="email" name="email" placeholder="abc@gmail.com"
+                    style="margin-left: 25%;">
+                </label> <br>
+
+                <label for="password" class="labels">Password:
+                    <input type="password" id="password" name="password" 
+                    placeholder="Create a string password"
+                    pattern="[0-9a-zA-Z#]{6,12}"
+                    style="margin-left: 22.85%;">
+                </label> <br>
+        
+                <label for="dob" class="labels">D.O.B.:
+                    <input type="date" name="dob" id="dob">
+                </label> <br>
+
+                <label for="options" class="labels">Choose your domain:</label>
+                <div class="formRadios">
+                    <input type="radio" name="options" id="options">Computer Science
+                    <input type="radio" name="options" id="options">Mechanical
+                    <input type="radio" name="options" id="options">Electrical
+                    <input type="radio" name="options" id="options">Civil
+                    <input type="radio" name="options" id="options">Textile
+                    <input type="radio" name="options" id="options">Others ...
+                </div> <br> <br>
+
+                <label for="options" class="labels">What are your hobbies?</label>
+                <div class="formChecks">
+                    <input type="checkbox" name="options" id="options" value="0">Playing instruments
+                    <input type="checkbox" name="options" id="options" value="1">Programming
+                    <input type="checkbox" name="options" id="options" value="2">Designing
+                    <input type="checkbox" name="options" id="options" value="3">Swimming
+                    <input type="checkbox" name="options" id="options" value="4">Painting
+                    <input type="checkbox" name="options" id="options" value="5">Sketching
+                    <input type="checkbox" name="options" id="options" value="6">Sculpting
+                    <input type="checkbox" name="options" id="options" value="7">Video-gaming
+                    <input type="checkbox" name="options" id="options" value="8">Learning new speaking languages
+                    <input type="checkbox" name="options" id="options" value="9">Reading
+                    <input type="checkbox" name="options" id="options" value="10">Playing outdoor sports
+                    <input type="checkbox" name="options" id="options" value="11">Playing indoor sports
+                    <input type="checkbox" name="options" id="options" value="12">Something even more interesting ...
+                </div> <br> <br>
+
+
+                <label for="about" class="labels">
+                    About Yourself:
+                    <textarea name="about" id="about" cols="30" rows="10"
+                    placeholder="(Optional)
+You can be creative here..."></textarea>
+                </label>
+
+                <input type="reset" name="Reset" id="Reset" class="button">
+                <input type="submit" name="Submit" id="Submit" class="button">
+        </form> 
+    </div>
+    
+    
+</body>
+</html>
